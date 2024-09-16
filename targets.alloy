@@ -63,7 +63,7 @@ declare "trace_pipeline" {
     }
 
     export "stages" {
-        value = [otelcol.processor.batch.batcher.input, otelcol.connector.spanmetrics.tracemetrics.input]
-        //value = [otelcol.processor.batch.batcher.input]
+        //value = [otelcol.processor.batch.batcher.input, otelcol.connector.spanmetrics.tracemetrics.input]
+        value = [otelcol.processor.batch.batcher.input]
     }
 }
